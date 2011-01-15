@@ -28,3 +28,14 @@ Brass:
 	git based service on the web to sync public/private data to/from when offfline
 	json files for each bookmark
 	cache of recent searches, requests, etc for search data or user data
+	
+Brass Filesystem Overview
+	- /tools - directory containing code for duing gitmarks actions (link to other git repo type A)
+	
+	- /public - directory containing gitmark files for each bookarm (links to other git repo type B, world+dog can read)  
+	- /private - directory containing encrypted gitmark files to/from other users. (links to other git repo type C, many can read)  
+		/tags - stats and tags in private
+		/posted - encrypted or plaintext bookmarks 'sent' from friends
+	
+	- /content - (optional) local content (scraped pages, stats, info, tags info, etc) (can be synced to git repo type C)
+	
